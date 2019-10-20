@@ -16,3 +16,11 @@ header, main, footer {
 html {
   overflow: hidden;
 }
+
+.degrade {
+  background-image: linear-gradient(to right, #78909c, #69f0ae, black);
+}
+
+.fundoCinza{
+  background-color: #eceff1;
+}
