@@ -57,7 +57,9 @@
 }
 
  .logo {
-
   height: 30px;
+}
 
+.modal-font {
+  font-size: 25;
 }
