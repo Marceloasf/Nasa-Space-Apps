@@ -6,7 +6,7 @@ seaSurface.addEventListener("click", function () {
 
     var serviceAddress = "https://neo.sci.gsfc.nasa.gov/wms/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0";
 
-    var layerClima = "AVHRR_CLIM_M";
+    var layerClima = "MYD28M";
 
     var createLayer = function (xmlDom) {
         var wms = new WorldWind.WmsCapabilities(xmlDom);
