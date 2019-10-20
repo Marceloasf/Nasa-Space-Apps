@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-});
+var buildModal = function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
 
-// Or with jQuery
+    $('.modal1').modal();
+}
 
-$(document).ready(function () {
-    $('.modal').modal();
-});
+buildModal();

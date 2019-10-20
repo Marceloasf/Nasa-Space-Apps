@@ -4,4 +4,4 @@ clearGlobe.addEventListener("click", function () {
 
     buildGlobe();
     
-})
+});
