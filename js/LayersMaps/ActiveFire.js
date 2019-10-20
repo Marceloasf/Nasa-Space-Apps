@@ -2,8 +2,6 @@ var activeFire = document.querySelector("#ActiveFire");
 
 activeFire.addEventListener("click", function () {
 
-    buildGlobe();
-
     var serviceAddress = "https://neo.sci.gsfc.nasa.gov/wms/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0";
 
     var layerClima = "MOD14A1_M_FIRE";
