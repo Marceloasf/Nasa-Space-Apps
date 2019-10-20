@@ -9,47 +9,85 @@
 <body>
     <div>
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper #1565c0 blue darken-3">
                 <a href="#" class="brand-logo">Logo</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
-                </ul>
             </div>
         </nav>
 
         <ul id="slide-out" class="sidenav sidenav-fixed margem">
-            <li><a href="#" id="TempMedia">Average Land Surface Temperature</a></li>
-            <li><a href="#" id="ActiveFire">Active Fire</a></li>
-            <li><a href="#" id="VegetationIndex">Vegetation Index</a></li>
-            <li><a href="#" id="CloudWater">Cloud Water Content</a></li>
-            <li><a href="#" id="SeaSurface">Sea Surface Temperature</a></li>
+            <li><a class="modal-trigger" data-target="modalAverageLand" href="#" id="TempMedia">Average Land Surface
+                    Temperature</a></li>
+            <li><a class="modal-trigger" data-target="modalActiveFire" href="#" id="ActiveFire">Active Fire</a></li>
+            <li><a class="modal-trigger" data-target="modalVegetation" href="#" id="VegetationIndex">Vegetation
+                    Index</a></li>
+            <li><a class="modal-trigger" data-target="modalCloudWater" href="#" id="CloudWater">Cloud Water Content</a>
+            </li>
+            <li><a class="modal-trigger" data-target="modalSeaTemperature" href="#" id="SeaSurface">Sea Surface
+                    Temperature</a></li>
             <li><a href="#" id="ClearGlobe">Clear Globe</a></li>
         </ul>
     </div>
 
-    <button data-target="modal1" class="btn modal-trigger right">Modal</button>
-
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="modalAverageLand" class="modal">
         <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <h4>Average land surface temperature </h4>
+            <p> Average land surface temperature explanation </p>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
         </div>
     </div>
 
-    <div class="center">
-        <br>
-        <canvas id="canvasOne" width="600" height="540">
+    <!-- Modal Structure -->
+    <div id="modalActiveFire" class="modal">
+        <div class="modal-content">
+            <h4>Active fires</h4>
+            <p> Active fires explanation </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalVegetation" class="modal">
+        <div class="modal-content">
+            <h4>Vegetation index</h4>
+            <p> Vegetation index explanation </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalCloudWater" class="modal">
+        <div class="modal-content">
+            <h4>Cloud water content</h4>
+            <p> Cloud water content explanation </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalSeaTemperature" class="modal">
+        <div class="modal-content">
+            <h4>Sea surface temperature</h4>
+            <p> Sea surface temperature explanation </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+    <div class="center #000000 black">
+        <canvas id="canvasOne" width="1370" height="540" >
             Your browser does not support HTML5 Canvas.
         </canvas>
     </div>
-
-
 
 </body>
 
