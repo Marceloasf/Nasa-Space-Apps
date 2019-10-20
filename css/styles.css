@@ -1,0 +1,18 @@
+header, main, footer {
+    padding-left: 300px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+        margin-top: 200px;
+        padding-left: 0;
+    }
+  }
+
+.margem {
+    margin-top: 64px;
+}
+
+html {
+  overflow: hidden;
+}
